@@ -1,17 +1,30 @@
 .portfolio__filter {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .filter__item {
+  margin-bottom: 15px;
   margin-right: 8px;
-  align-items: center;
   &:last-child {
     margin-right: 0px;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    margin-bottom: 0;
   }
 }
 
