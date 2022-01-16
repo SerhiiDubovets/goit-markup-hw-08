@@ -36,6 +36,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .section--no-padding-top {
   padding-top: 0;
 }
@@ -44,19 +50,8 @@
     display: none;
   }
 }
-@media screen and (max-width: 1199px) {
-  .section--no-padding-top {
-    display: none;
-  }
-}
 .section--other-bcg {
   background-color: var(--secondary-bcg-color);
-}
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .section__title {
@@ -613,21 +608,54 @@ img {
 
 .hero {
   padding: 118px 0;
-  max-width: 1600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
-  background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile/hero-mobile.jpg");
+  background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero-mobile.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
 }
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile/hero-mobile@2x.jpg");
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero-mobile@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero-mobile@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet/hero-tablet.jpg");
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero-tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero-tablet.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet/hero-tablet@2x.jpg");
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero-tablet@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero-tablet@2x.jpg");
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     padding: 200px 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/desctop/hero-desctop.jpg");
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desctop/hero-desctop.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desctop/hero-desctop.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/desctop/hero-desctop@2x.jpg");
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desctop/hero-desctop@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desctop/hero-desctop@2x.jpg");
   }
 }
 
@@ -1016,6 +1044,12 @@ img {
   }
 }
 
+.command__item {
+  border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 @media screen and (max-width: 767px) {
   .command__item:not(:last-child) {
     margin-bottom: 30px;
@@ -1050,21 +1084,11 @@ img {
 .command__meta {
   padding-top: 30px;
   padding-bottom: 24px;
-  border-radius: 0px 0px 4px 4px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 1200px) {
   .command__meta {
     padding-bottom: 30px;
   }
-}
-
-.command__img {
-  margin-bottom: 0;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .command__title {
