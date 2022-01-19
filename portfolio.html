@@ -21,7 +21,9 @@
     <!-- Шапка -->
     <header class="header">
       <div class="container container__header">
-        <a class="logo" href="/" lang="en"> <span class="logo__web">Web</span>Studio</a>
+        <a class="logo logo--margin-right" href="/" lang="en">
+          <span class="logo__web">Web</span>Studio</a
+        >
         <button type="button" class="menu-button" data-menu-button aria-expanded="false">
           <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
             <use class="menu-button__icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
@@ -32,28 +34,40 @@
           <nav class="nav">
             <ul class="site-nav site-nav__header">
               <li class="site-nav__item">
-                <a href="./index.html" class="site-nav__link">Студия</a>
+                <a href="./index.html" class="site-nav__link" aria-label="Студия.">Студия</a>
               </li>
               <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link site-nav__link--current"
+                <a
+                  href="./portfolio.html"
+                  class="site-nav__link site-nav__link--current"
+                  aria-label="Портфолио  текущая страница."
                   >Портфолио</a
                 >
               </li>
-              <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+              <li class="site-nav__item">
+                <a href="#" class="site-nav__link" aria-label="Контакты.">Контакты</a>
+              </li>
             </ul>
           </nav>
 
           <div class="header__contact-box">
             <ul class="auth-nav auth-nav--margin-bottom">
               <li class="auth-nav__item">
-                <a class="auth-nav__mail-link" href="mailto:info@devstudio.com" lang="en"
+                <a
+                  class="auth-nav__mail-link"
+                  href="mailto:info@devstudio.com"
+                  lang="en"
+                  aria-label="почта info@devstudio.com."
                   ><svg class="auth-nav__icon-envelope">
                     <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
                   >info@devstudio.com</a
                 >
               </li>
               <li class="auth-nav__item">
-                <a class="auth-nav__phone-link" href="tel:+380961111111"
+                <a
+                  class="auth-nav__phone-link"
+                  href="tel:+380961111111"
+                  aria-label="телефон +380961111111."
                   ><svg class="auth-nav__icon-smartphone">
                     <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
                   >+38 096 111 11 11</a
@@ -62,16 +76,16 @@
             </ul>
             <ul class="social-network">
               <li class="social-network__item">
-                <a class="social-network__link" href="">Instagram</a>
+                <a class="social-network__link" href="#" aria-label="Instagram.">Instagram</a>
               </li>
               <li class="social-network__item">
-                <a class="social-network__link" href="">Twitter</a>
+                <a class="social-network__link" href="#" aria-label="Twitter.">Twitter</a>
               </li>
               <li class="social-network__item">
-                <a class="social-network__link" href="">Facebook</a>
+                <a class="social-network__link" href="#" aria-label="Facebook.">Facebook</a>
               </li>
               <li class="social-network__item">
-                <a class="social-network__link" href="">LinkedIn</a>
+                <a class="social-network__link" href="#" aria-label="LinkedIn.">LinkedIn</a>
               </li>
             </ul>
           </div>
@@ -493,7 +507,7 @@
     <footer class="footer">
       <div class="container container__footer">
         <div class="footer__address">
-          <a class="logo logo--white" href="/" lang="en"
+          <a class="logo logo--white" href="/" lang="en" aria-label="webstudio."
             ><span class="logo__web">Web</span>Studio</a
           >
           <address class="address">
@@ -501,17 +515,27 @@
               <li class="address__item">
                 <a
                   class="address__link--white"
+                  aria-label="город Киев проспект Леси Украинки 26."
                   href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
               <li class="address__item">
-                <a class="address__link" href="mailto:info@example.com" lang="en"
+                <a
+                  class="address__link"
+                  href="mailto:info@example.com"
+                  aria-label="почта info@example.com."
+                  lang="en"
                   >info@example.com</a
                 >
               </li>
               <li class="address__item">
-                <a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                <a
+                  class="address__link"
+                  href="tel:+380991111111"
+                  aria-label="телефон +380991111111."
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -520,25 +544,25 @@
           <h3 class="footer__title">присоединяйтесь</h3>
           <ul class="social">
             <li class="social__item">
-              <a class="social__link social__link--white" href=""
+              <a class="social__link social__link--white" href="#" lang="en" aria-label="instagram."
                 ><svg class="social__svg social__svg--white" width="20px" height="20px">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
               ></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--white" href=""
+              <a class="social__link social__link--white" href="#" lang="en" aria-label="twitter."
                 ><svg class="social__svg social__svg--white" width="20px" height="20px">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
               ></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--white" href=""
+              <a class="social__link social__link--white" href="#" lang="en" aria-label="facebook."
                 ><svg class="social__svg social__svg--white" width="20px" height="20px">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
               ></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--white" href=""
+              <a class="social__link social__link--white" href="#" lang="en" aria-label="linkedin."
                 ><svg class="social__svg social__svg--white" width="20px" height="20px">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
               ></a>

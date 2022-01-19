@@ -9,7 +9,7 @@
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
@@ -17,7 +17,6 @@
   text-align: center;
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
-    margin-right: 165px;
     margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
@@ -60,9 +59,6 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
-  @media screen and (min-width: 1200px) {
-    margin-right: 93px;
-  }
 }
 
 .footer__subscription {
@@ -71,6 +67,7 @@
   }
   @media screen and (min-width: 1200px) {
     margin-top: 0;
+    margin-left: auto;
   }
 }
 

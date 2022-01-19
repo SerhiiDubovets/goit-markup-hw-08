@@ -42,6 +42,7 @@
 
 .menu-button.is-open .menu-button__icon-cross {
   display: block;
+  position: fixed;
 }
 
 .menu-button.is-open .menu-button__icon-menu {
@@ -64,17 +65,16 @@
   @media screen and (min-width: 768px) {
     display: contents;
   }
-}
-
-.header__box.is-open {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  &.is-open {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 }
 
-.nav {
+.header__box.is-open .nav {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -138,15 +138,6 @@
 @media screen and (min-width: 768px) {
   .site-nav__item + .site-nav__item {
     margin-left: 50px;
-  }
-}
-
-.site-nav__header {
-  @media screen and (min-width: 768px) {
-    margin-left: 88px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-left: 93px;
   }
 }
 
