@@ -1,5 +1,5 @@
 .portfolio__filter {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
   }
@@ -18,13 +18,21 @@
 
 .filter__item {
   margin-bottom: 15px;
-  margin-right: 8px;
   &:last-child {
     margin-right: 0px;
   }
   @media screen and (min-width: 768px) {
     align-items: center;
     margin-bottom: 0;
+  }
+  &:nth-last-child(-n + 2) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 8px;
   }
 }
 
